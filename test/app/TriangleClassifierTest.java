@@ -31,7 +31,7 @@ class TriangleClassifierTest {
 	@Test
 	void getTypeTriangle5() {
 		String test = TriangleClassifier.getTypeTriangle(3,4,5);
-		assertEquals(TriangleClassifier.TAM_GIAC_THUONG, test);
+		assertEquals(TriangleClassifier.TAM_GIAC_VUONG, test);
 	}
 
 	@Test

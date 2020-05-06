@@ -44,8 +44,13 @@ public class TriangleClassifier {
 
 	// là tam giác tù
 	public static Boolean isPrisonTriangle(int a, int b, int c){
+		int aa   = a*a;
+		int bbcc = b*b+c*c;
+		int bb   = b*b;
+		int cc   = c*c;
+		int aacc = a*a+c*c;
 		if(isTriangle(a, b, c)){
-			if(a*a > b*b+c*c || b*b > a*a+c*c || c*c > a*a+b*b)
+			if(aa > bbcc || b*b > aacc || c*c > a*a+b*b)
 				return true;
 		}
 		return false;
@@ -65,6 +70,6 @@ public class TriangleClassifier {
 			else
 				return TAM_GIAC_THUONG;
 		} else
-			return NOT_NOTICE;
+			return NOT_TRIANGLE;
 	}
 }
