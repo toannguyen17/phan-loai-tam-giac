@@ -1,12 +1,12 @@
 package app;
 
 public class TriangleClassifier {
-	public static final String TAM_GIAC_VUONG  = "Day la tam giac vuong";
-	public static final String TAM_GIAC_DEU    = "Day la tam giac deu";
-	public static final String TAM_GIAC_CAN    = "Day la tam giac can";
-	public static final String TAM_GIAC_TU     = "Day la tam giac tu";
-	public static final String TAM_GIAC_THUONG = "Day la tam giac thuong";
-	public static final String NOT_NOTICE      = "Ba canh a, b, c khong phai la ba canh cua mot tam giac";
+	public static final String TAM_GIAC_VUONG  = "Tam giác vuông";
+	public static final String TAM_GIAC_DEU    = "Tam giác đều";
+	public static final String TAM_GIAC_CAN    = "Tam giác cân";
+	public static final String TAM_GIAC_TU     = "Tam giác tù";
+	public static final String TAM_GIAC_THUONG = "Tam giác thường";
+	public static final String NOT_TRIANGLE    = "không phải là tam giác";
 
 	public static Boolean isTriangle(int a, int b, int c){
 		if(a<b+c && b<a+c && c<a+b){
